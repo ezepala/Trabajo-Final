@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+   background-image: url(https://images.alphacoders.com/676/676573.png);
+   background-size: contain;
+}
+
+
+
+.conteiner-header{
+    background: black;
+    position:fixed;
+    width: 100%;
+    
+}
+
+.conteiner-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+
+}
+
+.conteiner-header header .logo a{
+    font-size: 34px;
+    color:rgb(80, 180, 80);
+    text-decoration: none;
+
+}
+
+.conteiner-header header ul{
+    display: flex;
+    text-decoration: none;
+}
+
+.conteiner-header header nav ul li a {
+    text-align: none;
+    
+    color: azure;
+    padding: 3px;
+    margin: 0 16px;
+    text-decoration: none;
+}
+
+.conteiner-header header nav ul li a:hover{
+    opacity: 0.5;
+    color: red;
+}
+
+.nav-responsive{
+    background-color: rgb(80, 180, 80); 
+    color:aliceblue ;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display:none ;
+
+}
+
+
+
+
+
+.inicio{
+    padding: 100px;
+    background-color:rgb(196, 196, 221);
+    margin: auto;
+    text-align: center;
+    max-width: 550px;
+    border-radius: 50px;
+
+}
+
+.inicio img{
+    border-radius: 100px;
+    margin-top: 30px;
+    border: 5px solid wheat;
+    display: flex;
+    width: 70%;
+    margin: auto;
+
+}
+
+.inicio h1{
+    font-size: 35px;
+    margin-top: 30px;
+}
+
+.inicio h2{
+    font-size: 16px;
+    
+}
+
+.inicio .redes a{
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin:5px 3px;
+    border-radius: 50px;
+    
+ }
+
+
+.inicio .redes a:hover{
+    opacity: 0.7;
+
+}
+
+.fa-facebook{
+    background: #3B5998;
+    color: white;
+    
+    
+
+}
+
+.fa-instagram{
+    background:rgb(247, 100, 100);
+    color: white;
+}
+
+.fa-twitter{
+    background: #55ACEE;
+    color: white;
+
+}
+
+
+.sobremi h2{
+    
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: center;
+    padding: 50px; 
+    color: aliceblue;
+    
+    
+}
+
+.sobremi p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    padding: 3px;
+    color: aliceblue;
+    
+    
+}
+
+.skills{
+    margin: 80px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    padding: 50px;
+    color: aliceblue;
+}
+
+.skills .imagen img{
+     width: 780px;
+     height: 350px;
+} 
+ 
+.portafolio h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: center;
+    padding: 50px;
+    color: aliceblue;
+}
+.portafolio .imagen{
+    
+    display: flexbox;
+    margin: 0;
+    text-align: center;
+   
+}
+
+.portafolio .imagen img{
+    max-width: 550px;
+    height: 300px; 
+    padding: 4px; 
+    margin:auto ;
+  
+    
+}
+
+.contacto {
+    background: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    text-align: center;
+    padding: 50px;
+    color: aliceblue;
+}
+
+.contacto .form{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;   
+    justify-content:space-around ;
+    align-items: flex-start;
+    padding: 15px 20px;
+
+}
+
+.contacto .form button:hover{
+    background-color:red;
+    color: aliceblue;
+
+}
+
+footer{
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    background-color: rgba(118, 96, 180, 0.37);
+}
+
+footer .redes{
+    margin-bottom: 20px;
+}
+
+footer .redes a{
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin:5px 3px;
+    border-radius: 50px;
+}
+
+
+
+@media screen and (max-width:900px) {
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: black;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
